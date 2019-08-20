@@ -12,7 +12,7 @@ ML Definition:
 
 ML is great for:
 
-	- Problems for which existing solutions require a lot of hadn-tuning or long list of rules (ML can
+	- Problems for which existing solutions require a lot of hand-tuning or long list of rules (ML can
 	simplify code and perform better)
 	- Complex problems for which there is no good solution at all using a traditional approach.
 	- Fluctuating environment where an algorithm needs to adapt to new data.
