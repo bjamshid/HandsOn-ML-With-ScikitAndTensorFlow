@@ -1,4 +1,5 @@
 Example ML use-cases:
+
 	- Segment customers and find the best marketing strategy for each group
 	- Recommend products for each client based on what similar clients bought
 	- Detect which transactions are likely to be fraudulent
@@ -10,13 +11,14 @@ ML Definition:
 	measure P, if its performance on T, as measured by P, imporves with Exprerience E. -T.M 1997
 
 ML is great for:
+
 	- Problems for which existing solutions require a lot of hadn-tuning or long list of rules (ML can
 	simplify code and perform better)
 	- Complex problems for which there is no good solution at all using a traditional approach.
 	- Fluctuating environment where an algorithm needs to adapt to new data.
 	- Getting insight about complex problems and/or big data
 
-Types of ML systems(can be combined):
+Types of ML systems (can be combined):
 	- Supervised/Unsupervised/Semisupervised/Reinforcement Learning
 
 		- Supervised learining: training data includes the desired solutions(feature+label in data set)
