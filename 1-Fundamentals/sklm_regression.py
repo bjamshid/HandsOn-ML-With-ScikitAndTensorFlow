@@ -30,7 +30,7 @@ def prepare_country_stats(oecd_bli, gdp_per_capita):
     return full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[keep_indices]
 
 
-def prep_data():
+def prep_data(oecd='', gdp=''):
     # prepare
     oecd, gdp = load_data(oecd='', gdp='')
     country_stats = prepare_country_stats(oecd, gdp)
@@ -38,8 +38,8 @@ def prep_data():
     y = np.c_[country_stats["Life satisfaction"]]
     return X, y, country_stats
 
-def train_run_sklm():
-    X, y, country_stats = prep_data()
+def train_run_sklm(oecd='', gdp=''):
+    X, y, country_stats = prep_data(oecd='', gdp='')
 
     # plot
     country_stats.plot(kind='scatter', x="GDP per capita", y="Life satisfaction")
@@ -56,5 +56,12 @@ def train_run_sklm():
 
 
 if __name__=="__main__":
-    train_run_sklm()
+    try:
+        train_run_sklm(sys.argv[1], sys.argv[2])
+    except:
+        print("\nNo input file given, get them from these links:")
+        print("Better Life Index: https://stats.oecd.org/index.aspx?DataSetCode=BLI")
+        print("GDP Per Capita: https://www.imf.org/external/datamapper/NGDPDPC@WEO/OEMDC/ADVEC/WEOWORLD")
+        print("Clean and convert them into csv")
+    
 
