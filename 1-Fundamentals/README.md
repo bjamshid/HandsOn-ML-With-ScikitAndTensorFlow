@@ -86,3 +86,9 @@ Types of ML systems (can be combined):
 			- reduce reqularization on hyper-parameter
 			- do better feature engineering (see above)
 
+- Testing and Validating:
+	- data set must have been splitted to test and training (20/80 %).
+	- use test set to get "generalization error" (out of sample error)
+	- if trainig error is low but generalization error is high probably model is overfitting
+	- can use cross-validation (split trainig data into 2 complementary subsets and train model against one and validate against the other)
+
