@@ -54,6 +54,7 @@ Types of ML systems (can be combined):
 		- Model: model is built using examples and used to make predictions
 
 - Challenges of ML:
+
 	- Insufficient quantity of data (e.g.: natural language disambiguation with small amount of data regardless of selected learning algorithm)
 
 	- Nonrepresentative Trainig Data (e.g.: missing data on cases that are of intereset) resulting in inaccurate models for prediction
@@ -87,6 +88,7 @@ Types of ML systems (can be combined):
 			- do better feature engineering (see above)
 
 - Testing and Validating:
+
 	- data set must have been splitted to test and training (20/80 %).
 	- use test set to get "generalization error" (out of sample error)
 	- if trainig error is low but generalization error is high probably model is overfitting
