@@ -61,13 +61,28 @@ Types of ML systems (can be combined):
 		- flawed sampling method --> sampling bias
 
 	- Poor quality data (e.g.: trainig data with errors, outliers, noise)
-		* possible workarounds:
-			- outliers: discard of fix manually
-			- errors (missing features): ignore attribute, igone instance, fill in with median, fill in with zero/null, train 2 models with and without that feature
+		* to fix:
+			- for outliers: discard or fix manually
+			- in case of errors (e.g.: missing features, irrelevant instance): ignore attribute, igone instance, fill in with median, fill in with zero/null, train 2 models with and without that feature
 
 	- Irrelevant features:
-		* to avoid:
+		* to fix:
 			- careful feature selection
 			- quality feature extraction: combine existing features to produce better features (e.g.: dimensionality reduction)
 			- create new features: gather new data
+
+	- Overfitting:
+		- model doesn't generalize well (detecting pattern in noise in case of small or noisy data sets)
+		- usually happens when model is too complex relative to amount and noise in data set.
+		* to fixavoid: (approach is regualarization = right balance between fitting data and simple modelling)
+			- simply model by using fewer attributes (use lower degree of freedom)
+			- more trainig data
+			- reduce noise in trainig data
+		- amount of regularization can be controlled with hyper-parameters (belongs to learning algorithm and not affected by it, must be set prior to trainig)
+
+	- Underfitting: occures when model is too simple
+		* to fix:
+			- use more (and relevant) features to create the model
+			- reduce reqularization on hyper-parameter
+			- do better feature engineering (see above)
 
