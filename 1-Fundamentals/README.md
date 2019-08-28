@@ -53,3 +53,21 @@ Types of ML systems (can be combined):
 		- Instance: system learns the examples by heart and generalizes to new input using a similarity measure
 		- Model: model is built using examples and used to make predictions
 
+- Challenges of ML:
+	- Insufficient quantity of data (e.g.: natural language disambiguation with small amount of data regardless of selected learning algorithm)
+
+	- Nonrepresentative Trainig Data (e.g.: missing data on cases that are of intereset) resulting in inaccurate models for prediction
+		- small samples --> sampling noise
+		- flawed sampling method --> sampling bias
+
+	- Poor quality data (e.g.: trainig data with errors, outliers, noise)
+		* possible workarounds:
+			- outliers: discard of fix manually
+			- errors (missing features): ignore attribute, igone instance, fill in with median, fill in with zero/null, train 2 models with and without that feature
+
+	- Irrelevant features:
+		* to avoid:
+			- careful feature selection
+			- quality feature extraction: combine existing features to produce better features (e.g.: dimensionality reduction)
+			- create new features: gather new data
+
