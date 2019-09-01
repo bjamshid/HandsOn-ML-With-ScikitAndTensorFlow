@@ -1,4 +1,5 @@
 Topics in this chapter:
+
 	- the big picture
 	- frame the problem
 	- pipelines
@@ -6,6 +7,7 @@ Topics in this chapter:
 	- assumption verification
 
 Action part:
+
 	- get/look the data for train and test
 	- prepare data
 	- select and train model
