@@ -70,8 +70,8 @@ Challenges of ML:
 	- Overfitting:
 		- model doesn't generalize well (detecting pattern in noise in case of small or noisy data sets)
 		- usually happens when model is too complex relative to amount and noise in data set.
-		* to fixavoid: (approach is regualarization = right balance between fitting data and simple modelling)
-			- simply model by using fewer attributes (use lower degree of freedom)
+		* to fix: (approach is regualarization = right balance between fitting data and simple modelling)
+			- simplify model by using fewer attributes (use lower degree of freedom)
 			- more trainig data
 			- reduce noise in trainig data
 		- amount of regularization can be controlled with hyper-parameters (belongs to learning algorithm and not affected by it, must be set prior to trainig)
