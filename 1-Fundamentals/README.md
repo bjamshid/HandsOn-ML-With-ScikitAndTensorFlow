@@ -36,8 +36,7 @@ Types of ML systems (can be combined):
 			- visualization and dimentionality reduction: principal component analysis, kernel PCA, locality-linear embedding 'LLE',
 			t-distributed stochastic neighbour embedding 't-SNE'
 			- association rule learning: Apriori, Eclat
-
-		- Unsupervised learning: partially labeled trainig data, or combination of supervised & unsupervised algorithms(e.g.: photo hosting services)
+		- Semi-supervised learning: partially labeled trainig data, or combination of supervised & unsupervised algorithms(e.g.: photo hosting services)
 		Examples:
 			- deep belief networks 'DBNs' (based on stacked RBMs)
 
