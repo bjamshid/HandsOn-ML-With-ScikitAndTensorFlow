@@ -47,6 +47,6 @@
     (not of the model).
 
 13. what do model based algorithms search for?
-        optimal value as prediction for given data
+        optimal value for model parameters such that the model will generalize well for new instances using a cost function.
     what is the most common strategy they use to succeed?
     how do they make predictions?
