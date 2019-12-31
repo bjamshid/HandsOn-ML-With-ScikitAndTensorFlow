@@ -50,7 +50,7 @@ Types of ML systems (can be combined):
 	- Instance/Model based learning
 
 		- Instance: system learns the examples by heart and generalizes to new input using a similarity measure
-		- Model: model is built using examples and used to make predictions
+		- Model: model is built using examples and used to make predictions for new data
 
 Challenges of ML:
 
